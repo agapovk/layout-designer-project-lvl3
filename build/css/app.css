@@ -12160,7 +12160,7 @@ fieldset:disabled .btn {
   border-bottom-left-radius: 1rem;
 }
 
-#left-section nav {
+#left-section .nav {
   border-top-left-radius: 1rem;
 }
 
@@ -12175,8 +12175,15 @@ fieldset:disabled .btn {
             justify-content: space-between !important;
     min-width: 100%;
   }
-  #left-section nav {
+  #left-section .nav {
     border-radius: 0;
+  }
+  #left-section .nav span {
+    display: none;
+  }
+  .sticky-top {
+    top: auto !important;
+    bottom: 0 !important;
   }
   #right-section {
     display: none !important;
@@ -12187,14 +12194,29 @@ fieldset:disabled .btn {
   margin: 18px;
 }
 
-.contact-card img {
+.cc-card img {
   width: 50px;
 }
 
-.contact-card:hover {
+.cc-card:hover {
   color: #fbfbfb;
   background-color: #4545a5;
   -webkit-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
+}
+
+.nav img {
+  -webkit-filter: invert(96%) sepia(96%) saturate(15%) hue-rotate(351deg) brightness(104%) contrast(107%);
+          filter: invert(96%) sepia(96%) saturate(15%) hue-rotate(351deg) brightness(104%) contrast(107%);
+}
+
+.nav a img {
+  width: 25px;
+  height: 25px;
+}
+
+.clear-style {
+  color: inherit;
+  text-decoration: inherit;
 }
 /*# sourceMappingURL=app.css.map */

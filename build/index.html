@@ -11,55 +11,97 @@
     <div class="container-xxl">
       <div class="row d-flex">
         <div class="col-12 col-md-4 d-flex flex-column min-vh-100 border-0 border-gray p-0" id="left-section">
-          <nav class="bg-primary w-100">
-            <p>nav</p>
-          </nav>
+          <div class="nav bg-primary w-100 ps-3 pe-3 justify-content-between sticky-top align-items-center"><img class="ms-1 mt-4 mb-4" src="./images/icons/logo.svg" alt="logo" style="width: 15px;">
+            <div class="d-flex justify-content-end"><a class="nav-link link-light p-3" href="#contacts"><img src="./images/icons/people.svg" alt=""><span class="ms-2 small">Контакты</span></a><a class="nav-link link-light p-3" href="#chats"><img src="./images/icons/chat.svg" alt=""><span class="ms-2 small">Сообщения</span></a><a class="nav-link link-light p-3" href="#profile"><img src="./images/icons/person.svg" alt=""><span class="ms-2 small">Профиль</span></a></div>
+          </div>
           <div class="main pt-5 ps-4 pe-4">
+            <h2>Профиль</h2>
+            <input class="form-control mt-4 mb-5" type="text" placeholder="Поиск по сообщениям">
+            <div class="mt-5 pb-3 d-flex flex-column justify-content-center align-items-center text-center"><img class="rounded-circle mt-5" src="./images/avatar_1.jpg" alt="avatar-1" style="width: 90px"><span class="fw-bold m-3">Кодовёнок Хекслетович</span><span class="m-0">Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</span></div>
+            <div class="mt-5 pt-3 d-flex flex-column justify-content-center">
+              <ul class="list-group pt-3 pb-3">
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 border-bottom border-gray"><span class="m-0">
+                    <p class="m-0 small text-muted">Страна</p>
+                    <p class="m-0 small">Москва, Россия</p></span><img src="./images/icons/globe.svg" alt="globe-icon" style="width: 16px"></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 border-bottom border-gray"><span class="m-0">
+                    <p class="m-0 small text-muted">Телефон</p>
+                    <p class="m-0 small">+7 (499) 123-45-67</p></span><img src="./images/icons/telephone.svg" alt="telephone-icon" style="width: 16px"></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 border-bottom border-gray"><span class="m-0">
+                    <p class="m-0 small text-muted">Email</p>
+                    <p class="m-0 small">nikita.m@hexlet.io</p></span><img src="./images/icons/envelope.svg" alt="envelope-icon" style="width: 16px"></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0"><span class="m-0">
+                    <p class="m-0 small text-muted">Twitter</p>
+                    <p class="m-0 small">@n__mikhaylov</p></span><img src="./images/icons/people2.svg" alt="peoples-icon" style="width: 16px"></li>
+              </ul>
+            </div>
             <h2>Контакты</h2>
             <input class="form-control mt-4" type="text" placeholder="Поиск по контактам">
             <div>
-              <p class="text-muted mt-5">A</p>
-              <div class="contact-card mb-3 p-3 d-flex align-items-center shadow-sm"><img class="rounded-circle" src="./images/avatar_3.jpg" alt="contact image">
-                <div class="p-4">
-                  <p class="fw-bold m-0">Алексей Примадонин</p>
-                  <p class="small m-0">Онлайн</p>
-                </div>
-              </div>
-              <p class="text-muted mt-5">В</p>
-              <div class="contact-card mb-3 p-3 d-flex align-items-center shadow-sm"><img class="rounded-circle" src="./images/avatar_4.jpg" alt="contact image">
-                <div class="p-4">
-                  <p class="fw-bold m-0">Вениамин Редакторович</p>
-                  <p class="small m-0">Онлайн</p>
-                </div>
-              </div>
-              <p class="text-muted mt-5">Д</p>
-              <div class="contact-card mb-3 p-3 d-flex align-items-center shadow-sm"><img class="rounded-circle" src="./images/avatar_2.jpg" alt="contact image">
-                <div class="p-4">
-                  <p class="fw-bold m-0">Джедай Падаванов</p>
-                  <p class="small m-0">Был онлайн вчера</p>
-                </div>
-              </div>
-              <p class="text-muted mt-5">К</p>
-              <div class="contact-card mb-3 p-3 d-flex align-items-center shadow-sm"><img class="rounded-circle" src="./images/avatar_1.jpg" alt="contact image">
-                <div class="p-4">
-                  <p class="fw-bold m-0">Кодовёнок Хекслетович</p>
-                  <p class="small m-0">Был онлайн 3 часа назад</p>
-                </div>
-              </div>
-              <div class="contact-card mb-3 p-3 d-flex align-items-center shadow-sm"><img class="rounded-circle" src="./images/avatar_5.jpg" alt="contact image">
-                <div class="p-4">
-                  <p class="fw-bold m-0">Королева Верстальщина</p>
-                  <p class="small m-0">Была онлайн вчера</p>
-                </div>
-              </div>
-              <p class="text-muted mt-5">П</p>
-              <div class="contact-card mb-3 p-3 d-flex align-items-center shadow-sm"><img class="rounded-circle" src="./images/avatar_6.jpg" alt="contact image">
-                <div class="p-4">
-                  <p class="fw-bold m-0">Питонист Джангович</p>
-                  <p class="small m-0">Был онлайн вчера</p>
-                </div>
-              </div>
+              <p class="text-muted mt-5">A</p><a class="clear-style" href="#"> 
+                <div class="cc-card mb-3 p-3 d-flex align-items-center shadow-sm"><img class="rounded-circle" src="./images/avatar_3.jpg" alt="contact image">
+                  <div class="p-4">
+                    <p class="fw-bold m-0">Алексей Примадонин</p>
+                    <p class="small m-0">Онлайн</p>
+                  </div>
+                </div></a>
+              <p class="text-muted mt-5">В</p><a class="clear-style" href="#"> 
+                <div class="cc-card mb-3 p-3 d-flex align-items-center shadow-sm"><img class="rounded-circle" src="./images/avatar_4.jpg" alt="contact image">
+                  <div class="p-4">
+                    <p class="fw-bold m-0">Вениамин Редакторович</p>
+                    <p class="small m-0">Онлайн</p>
+                  </div>
+                </div></a>
+              <p class="text-muted mt-5">Д</p><a class="clear-style" href="#"> 
+                <div class="cc-card mb-3 p-3 d-flex align-items-center shadow-sm"><img class="rounded-circle" src="./images/avatar_2.jpg" alt="contact image">
+                  <div class="p-4">
+                    <p class="fw-bold m-0">Джедай Падаванов</p>
+                    <p class="small m-0">Был онлайн вчера</p>
+                  </div>
+                </div></a>
+              <p class="text-muted mt-5">К</p><a class="clear-style" href="#"> 
+                <div class="cc-card mb-3 p-3 d-flex align-items-center shadow-sm"><img class="rounded-circle" src="./images/avatar_1.jpg" alt="contact image">
+                  <div class="p-4">
+                    <p class="fw-bold m-0">Кодовёнок Хекслетович</p>
+                    <p class="small m-0">Был онлайн 3 часа назад</p>
+                  </div>
+                </div></a><a class="clear-style" href="#"> 
+                <div class="cc-card mb-3 p-3 d-flex align-items-center shadow-sm"><img class="rounded-circle" src="./images/avatar_5.jpg" alt="contact image">
+                  <div class="p-4">
+                    <p class="fw-bold m-0">Королева Верстальщина</p>
+                    <p class="small m-0">Была онлайн вчера</p>
+                  </div>
+                </div></a>
+              <p class="text-muted mt-5">П</p><a class="clear-style" href="#"> 
+                <div class="cc-card mb-3 p-3 d-flex align-items-center shadow-sm"><img class="rounded-circle" src="./images/avatar_6.jpg" alt="contact image">
+                  <div class="p-4">
+                    <p class="fw-bold m-0">Питонист Джангович</p>
+                    <p class="small m-0">Был онлайн вчера</p>
+                  </div>
+                </div></a>
             </div>
+            <h2>Чаты</h2>
+            <input class="form-control mt-4" type="text" placeholder="Поиск по сообщениям">
+            <div class="mt-5"><a class="clear-style" href="#"> 
+                <div class="cc-card mb-3 p-3 d-flex align-items-center shadow-sm mw-100"><img class="rounded-circle" src="./images/avatar_4.jpg" alt="contact image">
+                  <div class="p-4 d-flex flex-wrap justify-content-between w-100">
+                    <p class="fw-bold m-0">Вениамин Редакторович </p>
+                    <p class="small m-0">11:45</p>
+                    <p class="small m-0 w-100 text-truncate">o_O</p>
+                  </div>
+                </div></a><a class="clear-style" href="#"> 
+                <div class="cc-card mb-3 p-3 d-flex align-items-center shadow-sm"><img class="rounded-circle" src="./images/avatar_2.jpg" alt="contact image">
+                  <div class="p-4 d-flex flex-wrap justify-content-between mw-100">
+                    <p class="fw-bold m-0">Джедай Падаванов </p>
+                    <p class="small m-0">10:12</p><span class="small m-0 w-100 text-truncate">Привет, скоро третий проект? Уже скоро надо будет выложить</span>
+                  </div>
+                </div></a><a class="clear-style" href="#"> 
+                <div class="cc-card mb-3 p-3 d-flex align-items-center shadow-sm mw-100"><img class="rounded-circle" src="./images/avatar_3.jpg" alt="contact image">
+                  <div class="p-4 d-flex flex-wrap justify-content-between w-100">
+                    <p class="fw-bold m-0">Алексей Примадонин</p>
+                    <p class="small m-0">08:35</p>
+                    <p class="small m-0 text-truncate">Тесты упали >_<</p>
+                  </div>
+                </div></a></div>
           </div>
         </div>
         <div class="col m-0 d-flex min-vh-100 border-start border-gray justify-content-center sticky-top h-100" id="right-section">
