@@ -13,13 +13,64 @@
       <div class="left-section bg-white overflow-auto hide-scroll m-0 ms-md-4 my-md-4 radius-left d-flex flex-column">
         <!-- Navigation menu-->
         <div class="bg-primary w-100 ps-3 pe-3 d-flex justify-content-between align-items-center radius-left-top order-last order-md-first sticky-md-top"><img class="chat-logo ms-1 mt-4 mb-4" src="./images/icons/logo.svg" alt="logo" style="height: 24px;">
-          <div class="nav nav-tabs" id="nav-tab" role="tablist"><a class="nav-link link-light d-md-none" id="current-chat-tab" data-bs-toggle="tab" data-bs-target="#current-chat" type="button" role="tab" aria-controls="current-chat" aria-selected="true" href="#currnet-chat">
-              <div class="i bi-chat-left-text fs-4"></div></a><a class="nav-link link-light d-flex align-items-center" id="contacts-tab" data-bs-toggle="tab" data-bs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false" href="#contacts">
-              <div class="i bi-people fs-4"></div><span class="small ms-2 d-none d-md-inline-block">Контакты</span></a><a class="nav-link active link-light d-flex align-items-center" id="chats-tab" data-bs-toggle="tab" data-bs-target="#chats" type="button" role="tab" aria-controls="chats" aria-selected="false" href="#chats">
-              <div class="i bi-chat fs-4"></div><span class="small ms-2 d-none d-md-inline-block">Сообщение</span></a><a class="nav-link link-light d-flex align-items-center" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" href="#profile"><i class="bi-person fs-4"></i><span class="small ms-2 d-none d-md-inline-block">Профиль</span></a></div>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link link-light d-md-none" id="current-chat-tab" data-bs-toggle="tab" data-bs-target="#current-chat" type="button" role="tab" aria-controls="current-chat" aria-selected="true">
+              <div class="i bi-chat-left-text fs-4"></div>
+            </button>
+            <button class="nav-link link-light d-flex align-items-center" id="contacts-tab" data-bs-toggle="tab" data-bs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">
+              <div class="i bi-people fs-4"></div><span class="small ms-2 d-none d-md-inline-block">Контакты</span>
+            </button>
+            <button class="nav-link active link-light d-flex align-items-center" id="chats-tab" data-bs-toggle="tab" data-bs-target="#chats" type="button" role="tab" aria-controls="chats" aria-selected="false">
+              <div class="i bi-chat fs-4"></div><span class="small ms-2 d-none d-md-inline-block">Сообщение</span>
+            </button>
+            <button class="nav-link link-light d-flex align-items-center" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="bi-person fs-4"></i><span class="small ms-2 d-none d-md-inline-block">Профиль</span></button>
+          </div>
         </div>
         <!-- Left main section-->
         <div class="tab-content overflow-auto" id="nav-tabContent">
+          <div class="tab-pane fade" id="current-chat" role="tabpanel" aria-labelledby="current-chat-tab">
+            <div class="nav justify-content-between align-items-center radius-right-top border-0 border-bottom border-gray bg-white sticky-top">
+              <div class="ps-3 d-flex align-items-center"><img class="rounded-circle" src="./images/avatar_4.jpg" alt="contact image" style="width: 50px">
+                <div class="p-4">
+                  <p class="fw-bold m-0">Вениамин Редакторович</p>
+                  <p class="small m-0">Онлайн</p>
+                </div>
+              </div>
+            </div>
+            <div class="current-chat d-flex flex-column m-5">
+              <div class="d-inline-flex align-self-start mb-3 radius align-items-end"><img class="me-3 rounded-circle d-none d-md-inline-block" src="./images/avatar_4.jpg" alt="avatar" style="width: 50px"><span class="bg-light border-0 radius w-100 p-4 shadow-sm chat-message">
+                  <p class="m-0 fw-bold mb-1">Вениамин Редакторович</p>
+                  <p class="m-0">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?</p>
+                  <hr class="mt-2 mb-1">
+                  <p class="m-0 small">8 минут назад</p></span></div>
+              <div class="d-inline-flex align-self-end mb-3 radius align-items-end"><img class="me-3 rounded-circle d-none d-md-inline-block" src="./images/avatar_1.jpg" alt="avatar" style="width: 50px"><span class="bg-primary text-light border-0 radius w-100 p-4 shadow-sm chat-message">
+                  <p class="m-0">Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень</p>
+                  <hr class="mt-2 mb-1">
+                  <p class="m-0 small">5 минут назад</p></span></div>
+              <div class="d-inline-flex align-self-start mb-3 radius align-items-end"><img class="me-3 rounded-circle d-none d-md-inline-block" src="./images/avatar_4.jpg" alt="avatar" style="width: 50px"><span class="bg-light border-0 radius w-100 p-4 shadow-sm chat-message">
+                  <p class="m-0 fw-bold mb-1">Вениамин Редакторович</p>
+                  <p class="m-0">Лады</p>
+                  <hr class="mt-2 mb-1">
+                  <p class="m-0 small">5 минут назад</p></span></div>
+              <div class="d-inline-flex align-self-end mb-3 radius align-items-end"><img class="me-3 rounded-circle d-none d-md-inline-block" src="./images/avatar_1.jpg" alt="avatar" style="width: 50px"><span class="bg-primary text-light border-0 radius w-100 p-4 shadow-sm chat-message">
+                  <p class="m-0">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие</p>
+                  <hr class="mt-2 mb-1">
+                  <p class="m-0 small">3 минуты назад</p></span></div>
+              <div class="d-inline-flex align-self-start mb-3 radius align-items-end"><img class="me-3 rounded-circle d-none d-md-inline-block" src="./images/avatar_4.jpg" alt="avatar" style="width: 50px"><span class="bg-light border-0 radius w-100 p-4 shadow-sm chat-message">
+                  <p class="m-0 fw-bold mb-1">Вениамин Редакторович</p>
+                  <p class="m-0">о_О</p>
+                  <hr class="mt-2 mb-1">
+                  <p class="m-0 small">Только что</p></span></div>
+            </div>
+            <div class="chat-input nav m-0 justify-content-between align-items-center radius-right-bottom bg-white sticky-top sticky-bottom start-0 w-100">
+              <div class="m-0 mx-md-5 border-0 border-top border-gray w-100">
+                <form class="d-flex justify-conent-between align-items-center px-3">
+                  <input class="form-control border-0 rounded-0 shadow-none px-3 px-md-2" type="text" placeholder="Напишите сообщение..."><a class="send-button bg-primary d-flex justify-content-center align-items-center rounded-circle" href="#">
+                    <div class="i bi-cursor text-white"></div></a>
+                </form>
+              </div>
+            </div>
+          </div>
           <div class="tab-pane fade px-4" id="contacts" role="tabpanel" aria-labelledby="contacts-tab"> 
             <h2 class="fw-bold pt-5">Контакты</h2>
             <form>
@@ -120,49 +171,6 @@
                     <p class="m-0 small text-muted">Twitter</p>
                     <p class="m-0 small">@n__mikhaylov</p></span><img src="./images/icons/people2.svg" alt="peoples-icon" style="width: 16px"></li>
               </ul>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="current-chat" role="tabpanel" aria-labelledby="current-chat-tab">
-            <div class="nav justify-content-between align-items-center radius-right-top border-0 border-bottom border-gray bg-white sticky-top">
-              <div class="ps-3 d-flex align-items-center"><img class="rounded-circle" src="./images/avatar_4.jpg" alt="contact image" style="width: 50px">
-                <div class="p-4">
-                  <p class="fw-bold m-0">Вениамин Редакторович</p>
-                  <p class="small m-0">Онлайн</p>
-                </div>
-              </div>
-            </div>
-            <div class="current-chat d-flex flex-column m-5">
-              <div class="d-inline-flex align-self-start mb-3 radius align-items-end"><img class="me-3 rounded-circle d-none d-md-inline-block" src="./images/avatar_4.jpg" alt="avatar" style="width: 50px"><span class="bg-light border-0 radius w-100 p-4 shadow-sm chat-message">
-                  <p class="m-0 fw-bold mb-1">Вениамин Редакторович</p>
-                  <p class="m-0">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?</p>
-                  <hr class="mt-2 mb-1">
-                  <p class="m-0 small">8 минут назад</p></span></div>
-              <div class="d-inline-flex align-self-end mb-3 radius align-items-end"><img class="me-3 rounded-circle d-none d-md-inline-block" src="./images/avatar_1.jpg" alt="avatar" style="width: 50px"><span class="bg-primary text-light border-0 radius w-100 p-4 shadow-sm chat-message">
-                  <p class="m-0">Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень</p>
-                  <hr class="mt-2 mb-1">
-                  <p class="m-0 small">5 минут назад</p></span></div>
-              <div class="d-inline-flex align-self-start mb-3 radius align-items-end"><img class="me-3 rounded-circle d-none d-md-inline-block" src="./images/avatar_4.jpg" alt="avatar" style="width: 50px"><span class="bg-light border-0 radius w-100 p-4 shadow-sm chat-message">
-                  <p class="m-0 fw-bold mb-1">Вениамин Редакторович</p>
-                  <p class="m-0">Лады</p>
-                  <hr class="mt-2 mb-1">
-                  <p class="m-0 small">5 минут назад</p></span></div>
-              <div class="d-inline-flex align-self-end mb-3 radius align-items-end"><img class="me-3 rounded-circle d-none d-md-inline-block" src="./images/avatar_1.jpg" alt="avatar" style="width: 50px"><span class="bg-primary text-light border-0 radius w-100 p-4 shadow-sm chat-message">
-                  <p class="m-0">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие</p>
-                  <hr class="mt-2 mb-1">
-                  <p class="m-0 small">3 минуты назад</p></span></div>
-              <div class="d-inline-flex align-self-start mb-3 radius align-items-end"><img class="me-3 rounded-circle d-none d-md-inline-block" src="./images/avatar_4.jpg" alt="avatar" style="width: 50px"><span class="bg-light border-0 radius w-100 p-4 shadow-sm chat-message">
-                  <p class="m-0 fw-bold mb-1">Вениамин Редакторович</p>
-                  <p class="m-0">о_О</p>
-                  <hr class="mt-2 mb-1">
-                  <p class="m-0 small">Только что</p></span></div>
-            </div>
-            <div class="chat-input nav m-0 justify-content-between align-items-center radius-right-bottom bg-white sticky-top sticky-bottom start-0 w-100">
-              <div class="m-0 mx-md-5 border-0 border-top border-gray w-100">
-                <form class="d-flex justify-conent-between align-items-center px-3">
-                  <input class="form-control border-0 rounded-0 shadow-none px-3 px-md-2" type="text" placeholder="Напишите сообщение..."><a class="send-button bg-primary d-flex justify-content-center align-items-center rounded-circle" href="#">
-                    <div class="i bi-cursor text-white"></div></a>
-                </form>
-              </div>
             </div>
           </div>
         </div>
