@@ -40,18 +40,18 @@
 
 // Make border responsive
 
-$utilities: map-merge(
-  $utilities,
-  (
-    "border":
-      map-merge(
-        map-get($utilities, "border"),
-        (
-          responsive: true,
-        )
-      ),
-  )
-);
+// $utilities: map-merge(
+//   $utilities,
+//   (
+//     "border":
+//       map-merge(
+//       map.get($utilities, "border"),
+//       (
+//         responsive: true,
+//       )
+//     ),
+//   )
+// );
 
 // // Базовая сетка
 
@@ -110,12 +110,6 @@ $utilities: map-merge(
 //   }
 // }
 
-// Аватар
-
-#avatar img {
-  margin: 18px;
-}
-
 // Контакты
 
 .cc-card {
@@ -126,10 +120,17 @@ $utilities: map-merge(
   &:hover {
     color: #fbfbfb;
     background-color: #4545a5;
-    -webkit-transition: background-color 200ms linear;
-    -ms-transition: background-color 200ms linear;
+
+    // -webkit-transition: background-color 200ms linear;
+    // -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
   }
+}
+
+// Аватар
+
+#avatar img {
+  margin: 18px;
 }
 
 // mixin прячет скроллбар
@@ -139,8 +140,8 @@ $utilities: map-merge(
     -ms-overflow-style: none;
     scrollbar-width: none;
 
-    overflow-y: auto;
     overflow-x: hidden;
+    overflow-y: auto;
   }
 
   &::-webkit-scrollbar {
@@ -149,7 +150,7 @@ $utilities: map-merge(
 }
 
 .hide-scroll {
-  @include hide-scrollbar();
+  @include hide-scrollbar;
 }
 
 // Hexlet logo color
@@ -199,6 +200,7 @@ $utilities: map-merge(
     margin: 15px 0;
   }
 }
+
 // Nav tabs
 
 .nav-tabs {
@@ -206,19 +208,23 @@ $utilities: map-merge(
 
   .nav-link {
     margin-bottom: 0;
+
     background: transparent;
     border: 0;
+
     @include border-top-radius($nav-tabs-border-radius);
 
     &:hover,
     &:focus {
       border-color: transparent;
+
       // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
       isolation: isolate;
     }
 
     &.disabled {
       color: inherit;
+
       background-color: transparent;
       border-color: transparent;
     }
@@ -227,6 +233,7 @@ $utilities: map-merge(
   .nav-link.active,
   .nav-item.show .nav-link {
     color: #fff;
+
     background-color: transparent;
     border-color: transparent;
   }
